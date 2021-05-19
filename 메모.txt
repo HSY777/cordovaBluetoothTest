@@ -1,0 +1,9 @@
+https://m.blog.naver.com/chandong83/222032757410
+아두이노 ESP32 BLE_uart 예제 모바일에서 동작 확인하기
+
+https://victor8481.tistory.com/287
+임베디드기기 + 스마트폰 블루투스
+
+https://www.npmjs.com/package/cordova-plugin-ble
+Cordova BLE Plugin
+
