@@ -2,46 +2,31 @@
 <html>
 
 <!--
-Demo of using the high-level BLE Plugin API for reading the HexiWear sensor tag.
+Demo of using the BLE Plugin API for scanning for BLE devices.
 -->
 
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, user-scalable=no,
-		shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-
-	<title>HexiWear SensorTag Demo</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no
+		initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>Cordova BLE Demo</title>
 
 	<script>
 	// Redirect console.log when running from Evothings Workbench.
 	if (window.hyper && window.hyper.log) { console.log = hyper.log }
 	</script>
 
-    <link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
 	<img class="evo-image" src="https://evomedia.evothings.com/2013/11/evothings_logo_large_white1.png" />
 
-	<h1>HexiWear SensorTag Demo</h1>
-
-	<p>This app demonstrates how to use the BLE plugin API for reading paired devices like the HexiWear SensorTag.</p>
-
-	<p>This app is experimental and not yet fully finalised.</p>
+	<h1>Cordova BLE Demo</h1>
 
 	<p id="message">Preparing...</p>
 
-	<button id="connect">Connect</button>
-
-	<button id="disconnect">Disconnect</button>
-
-	<p>Manufacturer: <span id="device-manufacturer"></span></p>
-
-	<p>Firmware: <span id="device-firmware"></span></p>
-
-	<p>Accelerometer: <span id="device-accelerometer"></span></p>
-
-	<p>Temperature (&deg;C): <span id="device-temperature"></span></p>
+	<div id="found-devices"></div>
 
 	<!--
 	Including cordova.js will automatically include the JavaScript library
